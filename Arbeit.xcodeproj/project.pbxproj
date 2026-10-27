@@ -6,6 +6,10 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		497AA33D3090DFC80064A78B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 497AA33C3090DFC80064A78B /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		497AA31E3090A6470064A78B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -51,6 +55,7 @@
 		497AA30D3090A6450064A78B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				497AA33D3090DFC80064A78B /* FirebaseFirestore in Frameworks */,
 			);
 		};
 		497AA31A3090A6470064A78B /* Frameworks */ = {
@@ -72,6 +77,7 @@
 				497AA3123090A6450064A78B /* Arbeit */,
 				497AA3203090A6470064A78B /* ArbeitTests */,
 				497AA32A3090A6470064A78B /* ArbeitUITests */,
+				497AA33B3090DFC80064A78B /* Frameworks */,
 				497AA3113090A6450064A78B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,6 +90,13 @@
 				497AA3273090A6470064A78B /* ArbeitUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		497AA33B3090DFC80064A78B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,6 +116,9 @@
 				497AA3123090A6450064A78B /* Arbeit */,
 			);
 			name = Arbeit;
+			packageProductDependencies = (
+				497AA33C3090DFC80064A78B /* FirebaseFirestore */,
+			);
 			productName = Arbeit;
 			productReference = 497AA3103090A6450064A78B /* Arbeit.app */;
 			productType = "com.apple.product-type.application";
@@ -181,6 +197,9 @@
 			);
 			mainGroup = 497AA3073090A6450064A78B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				497AA33A3090DF950064A78B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 497AA3113090A6450064A78B /* Products */;
 			projectDirPath = "";
@@ -540,6 +559,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		497AA33A3090DF950064A78B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		497AA33C3090DFC80064A78B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 497AA33A3090DF950064A78B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 497AA3083090A6450064A78B /* Project object */;
 	validationLevel = 1;
