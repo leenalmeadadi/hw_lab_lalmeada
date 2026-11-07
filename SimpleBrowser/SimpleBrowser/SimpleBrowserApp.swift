@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// Entry point of the app. Opens ContentView as the main window.
 @main
 struct SimpleBrowserApp: App {
     var body: some Scene {
